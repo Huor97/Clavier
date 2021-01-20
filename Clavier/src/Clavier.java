@@ -1,70 +1,35 @@
 // classe fournissant des fonctions de lecture au clavier
 import java.io.*;
-import java.util.Scanner;
 
-
-@SuppressWarnings("unused")
-
+// class Clavier recuper les donne qu'on donne après Clavier
 public class Clavier{
 	
-	
-	
-	// la methode lireInt qui returne integer 
-//	public static int lireInt() {
-//try ( Scanner scanner = new Scanner( System.in ) ) {
-//            
-//            System.out.print( "Veuillez saisir un premier entier : " );
-//            int a = scanner.nextInt();
-//            
-//            System.out.print( "Veuillez saisir un second entier : " );
-//            int b = scanner.nextInt();
-//            
-//        
-//            
-//        }
-//        
-//		return 0;	
-//		
-//	}
-	
-
-	
-	
-	
-	// le methode lireString qui returne String
+	// Lire moi les chenes de caracter 
 	public static String lireString() {
-		return null;      // lecture d'une chaine
-		
+		// crée moi une variable de type String
+		String saisie = null;
+		/* Crée objet de type BufferedReader et
+		mettre de dans une objet de type inputStreameader qui prendre input*/
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in) );
+		try {
+			// mettre dans saisie br 
+			saisie = br.readLine();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
 		}
+		//returne moi saisie
+		return saisie;
+	}
 	
-
-	//la methode lirefloat qui returne float 
-	public static float lireFloat(){
-		return 0;     // lecture d'un float
-
-		}
-		
-	
-	
-	//la methode lireDouble qui returne double
-	public static double lireDouble() {
-		return 0;    // lecture d'un double
-
+	// Lire moi des entiers
+	public static int lireInt() {
+		// faire reference de la methode lireString()
+		String saisie1 = lireString();
+		// Crée moi une variable de type int qui fait reference la ligne 28
+		int myInt = Integer.parseInt(saisie1);
+		return myInt;
 	}
 
-    public static int lireInt() throws NumberFormatException {
-    	System.out.println("rentre une numbre");
-    
-    	return Integer.parseInt(new Scanner(System.in).nextLine());
-    }
-    
-    
-	//programme de test de la classe Clavier
-	public static void main(String[] args){
-		int result ;
-		result = Clavier.lireInt() ;
-//        int result = a + b;
-        System.out.println( result );
-	}
 }
 
