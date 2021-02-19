@@ -7,9 +7,9 @@ public class S1Exo1 {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		System.out.print( "saisissez 4 chiffre en presant entrer à la fin de chaque chiffre \n " );
-		int i = 0;
+		
 		double somme = 0;
-		for (i=0; i<4; i++) {
+		for (int i=0; i<4; i++) {
 			int x = Clavier.lireInt();
 			somme+= x;
 		}
