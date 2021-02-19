@@ -1,1 +1,0 @@
-memberSearchIndex = [{"p":"<Unnamed>","c":"Clavier","l":"Clavier()","u":"%3Cinit%3E()"},{"p":"<Unnamed>","c":"Clavier","l":"lireFloat()"},{"p":"<Unnamed>","c":"Clavier","l":"lireInt()"},{"p":"<Unnamed>","c":"Clavier","l":"lireString()"},{"p":"<Unnamed>","c":"Clavier","l":"main(String[])","u":"main(java.lang.String[])"}];updateSearchResults();
